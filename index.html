@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchard Brands</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav class="nav initial" style="position: fixed; top: 0;z-index: 999;">
+            <a href="index.html" class="nav-logo"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="nav-links-active">
+                        <a href="products.html">Products</a>
+                        <div class="nav-links-dropdown">
+                            <a class="nav-links-dropdown-option" href="bakery.html">Bakery</a>
+                            <a class="nav-links-dropdown-option" href="dairy.html">Dairy</a>
+                            <a class="nav-links-dropdown-option" href="">confectionery</a>
+                            <a class="nav-links-dropdown-option" href="freezeDry.html">Freeze Dry</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="whatsnew.html">What's New</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <a class="nav-freezedry-button" href="freezeDry.html" >Freeze Dry</a>
+        </nav>
+        
+        <nav class="nav scrolled" style="opacity: 0;background-color: white; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  position: fixed; top:0; z-index: 999;">
+            <a href="index.html" class="nav-logo"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="nav-links-active">
+                        <a href="products.html">Products</a>
+                        <div class="nav-links-dropdown">
+                            <a class="nav-links-dropdown-option" href="bakery.html">Bakery</a>
+                            <a class="nav-links-dropdown-option" href="dairy.html">Dairy</a>
+                            <a class="nav-links-dropdown-option" href="">confectionery</a>
+                            <a class="nav-links-dropdown-option" href="freezeDry.html">Freeze Dry</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="whatsnew.html">What's New</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <a href="freezeDry.html" class="nav-freezedry-button">Freeze dry</a>
+        </nav>
+        
+        <video class="background-video" autoplay loop muted plays-inline poster="" ><source src="assets/orange.mp4" type="video/mp4" controlslist="nodownload" oncontextmenu="return false"/></video>
+        <div class="feature-logo-box">
+            <img class="feature-logo" alt="orchard brands logo" src="./assets/logo.png" />
+        </div>
+        <h1>We harvest in technology to serve you the best of nature</h1>
+        <div class="checkout-box">
+            <img src="./assets/arrow.png" alt="check below" class="arrow-icon" onClick="document.getElementById('ourProducts').scrollIntoView({behavior: 'smooth', block:'start'});"/>
+            <p class="checkout-label">Check out products</p>
+        </div>
+    </section>
+
+
+    
+    <section class="intro">
+        <div class="yellow-box">
+            <div class="yellow-box-container">
+            <div class="yellow-box-left">
+                <p class="yellow-box-title">Our secret is creating together</p>
+                <a href="about.html" class="learn-more-button">Learn more</a>
+            </div>
+            <div class="yellow-box-right">
+                <p class="yellow-box-desc">We partner with customers who are looking for significant value initiatives, whether it is delivering new product concept, developing innovative functional ingredient or optimizing supply chain of critical raw materials. Our expertise in product development turns opportunities into solutions that surmount your competitors and helps you grow.</p>
+                
+            </div>
+            </div>
+            <img class="yellow-box-bowl" alt="fruit bowl" src="./assets/bowl.png"/>
+        </div>
+    </section>
+
+
+    <section class="ourProducts" id="ourProducts">
+        <div class="ourProducts-top">
+            <div class="ourProducts-top-box">
+                <h2 class="ourProducts-title">Our&NewLine;Products</h2>
+                <img class="ourProducts-title-img" alt="Orange Juice" src="./assets/orangeJuice.png"/>
+            </div>
+        </div>
+        <div class="ourProducts-bottom">
+            <ul>
+                <li>
+                    <div class="ourProducts-hover">
+
+                    </div>
+                    <div class="ourProducts-active">
+                        <div class="ourProducts-product-title-box">
+                            <h3 class="ourProducts-product-title">Bakery</h3>
+                        </div>
+                        <div class="ourProducts-product-info-box">
+                            <img class="ourProducts-product-info-img" alt="Bakery Cake" src="./assets/cake2.png"/>
+                            <div class="ourProducts-product-info">
+                                <p>Machinable&NewLine;Bake Stable&NewLine;Tasteful</p>
+                                <a href="bakery.html" class="ourProducts-product-info-button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ourProducts-hover">
+
+                    </div>
+                    <div class="ourProducts-active">
+                        <div class="ourProducts-product-title-box">
+                            <h3 class="ourProducts-product-title">Dairy</h3>
+                        </div>
+                        <div class="ourProducts-product-info-box">
+                            <img class="ourProducts-product-info-img" alt="Dairy" src="./assets/dairy2.png"/>
+                            <div class="ourProducts-product-info">
+                                <p>Mouthfeel&NewLine;Consistency&NewLine;Full-Flavoured</p>
+                                <a href="dairy.html" class="ourProducts-product-info-button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ourProducts-hover">
+
+                    </div>
+                    <div class="ourProducts-active">
+                        <div class="ourProducts-product-title-box">
+                            <h3 class="ourProducts-product-title">Confectionery</h3>
+                        </div>
+                        <div class="ourProducts-product-info-box">
+                            <img class="ourProducts-product-info-img" alt="chocolate bars" src="./assets/chocolate.png"/>
+                            <div class="ourProducts-product-info">
+                                <p>Delicious&NewLine;Vibrant&NewLine;Rich</p>
+                                <a href="products.html" class="ourProducts-product-info-button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ourProducts-fd">
+                    <div class="ourProducts-hover ourProducts-hover-fd">
+
+                    </div>
+                    <div class="ourProducts-active">
+                        <div class="ourProducts-product-title-box">
+                            <h3 class="ourProducts-product-title">Freeze Dry</h3>
+                        </div>
+                        <div class="ourProducts-product-info-box">
+                            <img class="ourProducts-product-info-img" alt="logo" src="./assets/logoSil.png"/>
+                            <div class="ourProducts-product-info">
+                                <p>Chilled&NewLine;Fresh&NewLine;Delightful</p>
+                                <a href="freezeDry.html" class="ourProducts-product-info-button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="ourServices" id="ourServices">
+        <div class="ourServices-top">
+            <div class="ourServices-top-box">
+                <h2 class="ourServices-title">Our&NewLine;Services</h2>
+                <img class="ourServices-title-img" alt="Fruits and Jam" src="./assets/servicesBg.png"/>
+            </div>
+        </div>
+        <div class="ourServices-bottom">
+            <ul>
+                <li>
+                    <div class="ourServices-service" style="background-color:#E0E5FE; margin-top: 0px;" >
+                        <img class="ourServices-icon" alt="earth icon" src="./assets/iconEarth.png"/>
+                        <h4 class="ourServices-service-title">GLOBAL CONSUMER TRENDS MAPPING</h4>
+                        <p class="ourServices-service-text">Orchard Brands success in creating exciting new concepts for our clients start with our familiarity of consumer behaviour and consumption trends. Through our global network of partners, we provide a continuous update about food behaviour trends and new technologies that can translate into important cues for client’s new product plans.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="ourServices-service" style="background-color:#FFF7E3"  >
+                        <img class="ourServices-icon" alt="person icon" src="./assets/iconPerson.png"/>
+                        <h4 class="ourServices-service-title">CUSTOMER SERVICE</h4>
+                        <p class="ourServices-service-text">Our close customer connexion as business partners sensitize us accountable for our mutual progress. An adaptable and competent team addressed every aspect pertinent to sales and logistics service. We serve our customers in the best possible fashion with services tailored for your needs.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="ourServices-service" style="background-color:#E9FBE9"  >
+                        <img class="ourServices-icon" alt="network icon" src="./assets/iconNetwork.png"/>
+                        <h4 class="ourServices-service-title">CREATIVE DEVELOPMENT CENTER (CDC)</h4>
+                        <p class="ourServices-service-text">Our CDC provides integrated set of facilities in product development formulation and access to latest ingredient technologies. A qualified team of technical personnel from our development centre pool out resources and find new ways to make food irresistible for your customers.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="ourServices-logo-box">
+                        <img class="ourServices-logo" alt="Orchard Brands" src="assets/logo.png"/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+
+    <section class="whatsnew">
+        <div class="blue-box" >
+            <div class="blue-box-container">
+            <div class="blue-box-left">
+                <p class="blue-box-left-title">What's new</p>
+                <div>
+                    <p class="blue-box-left-subtitle">Orchard brands at Ice-Cream Congress & Expo in Mumbai, India</p>
+                    <p class="blue-box-left-text">We will be showcasing exciting new concepts in dairy at the Ice cream Congress & Expo on 15 & 16 September
+                        at Bombay Exhibition Centre in Mumbai, India</p>
+                </div>
+            </div>
+            <img class="blue-box-right-img" alt="food and beaker image" src="./assets/yogurt.jpg"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" >
+        <div class="contact-box">
+            <div class="contact-box-left">
+                <div class="contact-address-box">
+                    <img class="contact-blackLeafLogo" alt="leaf logo" src="./assets/blackLeafLogo.png"/>
+                    <div class="contact-address-info">
+                        <p class="contact-address-label">Address</p>
+                        <p class="contact-address-address">Orchard Brands Pvt. Ltd. 29, Udyog Bhavan, Sonawala Road, Goregaon (East), Mumbai 400063</p>
+                        <a class="contact-icon-box" href="https://www.google.com/maps/place/Orchard+Brands+Pvt.+Ltd./@19.1622995,72.8511502,18.11z/data=!4m6!3m5!1s0x3be7b64d4dade071:0xe12c7f77200565d0!8m2!3d19.1619373!4d72.8503606!16s%2Fg%2F11c58wtjqv?entry=ttu" target="_blank"><img class="contact-icon"alt="location icon" src="./assets/location.png"/></a>
+                    </div>
+                </div>
+                <div class="contact-contact-box">
+                    <img class="contact-blackLeafLogo" alt="leaf logo" src="./assets/blackLeafLogo.png"/>
+                    <div class="contact-contact-info">
+                        <p class="contact-contact-label">Contact</p>
+                        <a class="contact-contact-contact" href="tel: +912226850070">Phone: +91 22 26850070</a>
+                        <a class="contact-contact-contact" href="mailto: info@orchardbrands.in">Email: info@orchardbrands.in</a>
+                        <a class="contact-icon-box" style="margin-top:45px" href="contact.html"><img class="contact-icon"alt="location icon" src="./assets/rightArrow.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-box-right">
+                <img class="contact-secondlogo" alt="lets make everything irresistible" src="./assets/secondlogo.png"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer-box">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./assets/logo.png" alt="Orchard Brands inspired by nature" class="footer-logo"/>
+            <ul style="align-items: flex-end">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="whatsnew.html">What's New</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <script>
+        window.addEventListener('scroll', function() {
+        var initialNavbar = document.querySelector('.initial');
+        var scrolledNavbar = document.querySelector('.scrolled');
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        var scrollThreshold = window.innerHeight;
+        if (scrolled > scrollThreshold) {
+            initialNavbar.style.opacity = '0';
+            scrolledNavbar.style.opacity = '1';
+        } else {
+            initialNavbar.style.opacity = '1';
+            scrolledNavbar.style.opacity = '0';
+        }
+        });
+    </script>
+    <script>
+        //js for toggling nav bar
+        var navLinks = document.getElementById("navLinks");
+        function showNav() {
+            navLinks.style.right = "0"; 
+        }
+        function hideNav() {
+            navLinks.style.right = "-200px"; 
+        }
+    </script>
+</body>
+</html> 
