@@ -16,14 +16,16 @@
 </head>
 <body>
     <section class="header">
-        <nav class="nav initial" style="position: fixed; top: 0;z-index: 999;">
+        <button class="nav-toggle-open-button" onclick="showNav()">|||</button>
+        <nav class="nav initial" style="position: fixed; top: 0;z-index: 999;" id="navLinks">
             <a href="index.html" class="nav-logo"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
-            <div class="nav-links" id="navLinks">
+            <button class="nav-toggle-close-button" onclick="hideNav()">X</button>
+            <div class="nav-links" >
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="nav-links-active">
-                        <a href="products.html">Products</a>
+                        <a href="products.html" class="nav-products">Products</a>
                         <div class="nav-links-dropdown">
                             <a class="nav-links-dropdown-option" href="bakery.html">Bakery</a>
                             <a class="nav-links-dropdown-option" href="dairy.html">Dairy</a>
@@ -37,6 +39,7 @@
                 </ul>
             </div>
             <a class="nav-freezedry-button" href="freezeDry.html" >Freeze Dry</a>
+            <a href="index.html" class="nav-logo-2"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
         </nav>
         
         <nav class="nav scrolled" style="opacity: 0;background-color: white; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  position: fixed; top:0; z-index: 999;">
@@ -62,7 +65,7 @@
             <a href="freezeDry.html" class="nav-freezedry-button">Freeze dry</a>
         </nav>
         
-        <video class="background-video" autoplay loop muted plays-inline poster="" ><source src="assets/orange.mp4" type="video/mp4" controlslist="nodownload" oncontextmenu="return false"/></video>
+        <video class="background-video" autoplay loop muted plays-inline poster="assets/poster.jpg" ><source src="assets/orange.mp4" type="video/mp4" controlslist="nodownload" oncontextmenu="return false"/></video>
         <div class="feature-logo-box">
             <img class="feature-logo" alt="orchard brands logo" src="./assets/logo.png" />
         </div>
@@ -296,7 +299,7 @@
             navLinks.style.right = "0"; 
         }
         function hideNav() {
-            navLinks.style.right = "-200px"; 
+            navLinks.style.right = "-100%"; 
         }
     </script>
 </body>

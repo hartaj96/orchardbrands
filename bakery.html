@@ -16,18 +16,20 @@
 </head>
 <body>
     <section class="header nav-height">
-        <nav class="nav" style="background-color: white; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  position: fixed; top:0; z-index: 999;">
+        <button class="nav-toggle-open-button" style="margin-top: 20px; z-index: 998;" onclick="showNav()">|||</button>
+            <nav class="nav" style="background-color: white; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);  position: fixed; top:0; z-index: 999;" id="navLinks">
             <a href="index.html" class="nav-logo"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
-            <div class="nav-links" id="navLinks">
+            <button class="nav-toggle-close-button" onclick="hideNav()">X</button>
+            <div class="nav-links" >
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="nav-links-active">
-                        <a href="products.html">Products</a>
+                        <a href="products.html" class="nav-products">Products</a>
                         <div class="nav-links-dropdown">
                             <a class="nav-links-dropdown-option" href="bakery.html">Bakery</a>
                             <a class="nav-links-dropdown-option" href="dairy.html">Dairy</a>
-                            <a class="nav-links-dropdown-option" href="">confectionery</a>
+                            <a class="nav-links-dropdown-option" href="confectionery.html">confectionery</a>
                             <a class="nav-links-dropdown-option" href="freezeDry.html">Freeze Dry</a>
                         </div>
                     </li>
@@ -36,7 +38,9 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <a href="freezeDry.html" class="nav-freezedry-button">Freeze dry</a>
+            <a class="nav-freezedry-button" href="freezeDry.html" >Freeze Dry</a>
+            <a href="index.html" class="nav-logo-2"><img class="nav-logo-img" alt="orchard brands logo" src="./assets/logo.png" /></a>
+        </nav>
         </nav>
         
     </section>
@@ -194,7 +198,7 @@
             navLinks.style.right = "0"; 
         }
         function hideNav() {
-            navLinks.style.right = "-200px"; 
+            navLinks.style.right = "-100%"; 
         }
     </script>
 </body>
